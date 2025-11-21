@@ -23,7 +23,7 @@ width: fill-container
 spacing.fixed.px: 24
 
 -- ftd.column:
-background.solid: $ds.colors.background.step-1
+background.solid: #F8F4ED
 padding-vertical.px if { scroll-card.small }: 40
 padding-right.px if { scroll-card.small }: 20
 padding-left.px if { scroll-card.small }: 40
@@ -35,12 +35,12 @@ width.fixed.px: 730
 
 -- ds.heading-hero: $scroll-card.title
 if: { !scroll-card.small }
-color: $ds.colors.text
+color: #210200
 style: semi-bold
 
 -- ds.heading-large: $scroll-card.title
 if: { scroll-card.small }
-color: $ds.colors.text
+color: #210200
 style: semi-bold
 
 -- ds.copy-regular: $scroll-card.body
@@ -87,7 +87,7 @@ width: fill-container
 spacing.fixed.px: 24
   
 -- ftd.column:
-background.solid: $ds.colors.background.step-1
+background.solid: #F8F4ED
 padding.px: 40
 border-radius.px: 20
 spacing.fixed.px: 32
@@ -95,7 +95,7 @@ width: fill-container
 border-radius.px: 16
   
 -- ds.heading-hero: $scroll-card.title
-color: $ds.colors.text
+color: #210200
 style: semi-bold
 
 -- ds.copy-regular: $scroll-card.body
@@ -191,7 +191,7 @@ fit if { image-slider-card.height }: cover
 
 -- ds.column:
 if: { image-slider-card.title }
-background.solid: $ds.colors.background.step-1
+background.solid: #F8F4ED
 radius: $ds.radius.zero
 
 -- ds.heading-tiny: $image-slider-card.title
@@ -228,14 +228,14 @@ id: $title-card.id
 border-radius.px: 20
 padding.px: 40
 padding-bottom.px: 60
-background.solid: $ds.colors.background.step-1
+background.solid: #F8F4ED
 
 -- ds.heading-small: $title-card.sub-title
-color: $ds.colors.text
+color: #210200
 style: regular
 
 -- ds.heading-hero: $title-card.title
-color: $ds.colors.text
+color: #210200
 
 -- end: ftd.column
 
@@ -277,7 +277,7 @@ fit: cover
 
 -- ftd.column:
 if: { layer-card.hover }
-background.solid: $ds.colors.background.overlay
+background.solid: #ffffffd1
 anchor: parent
 bottom.px: 0
 left.px: 0
@@ -292,7 +292,7 @@ link: $layer-card.cta-link
  
 -- ds.heading-medium: $layer-card.title
 align: center
-color: $ds.colors.cta-secondary.text
+color: #000000
 
 -- ds.copy-regular: $layer-card.body
 if: { layer-card.body != NULL }
@@ -324,7 +324,7 @@ string link:
 width.fixed.px: 450
 width if { ftd.device == "mobile" }: fill-container
 border-radius.px: 20
-background.solid: $ds.colors.background.step-1
+background.solid: #F8F4ED
 link: $reversed-card.link
 
 -- ftd.column:
@@ -334,7 +334,7 @@ padding-bottom.px: 60
 
 -- ds.heading-medium: $reversed-card.title
 style: semi-bold
-color: $ds.colors.text
+color: #210200
 
 -- ds.copy-regular: $reversed-card.body
 
