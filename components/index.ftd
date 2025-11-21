@@ -52,12 +52,14 @@ spacing.fixed.px: 32
 wrap: true
 
 -- ds.primary-button: $scroll-card.cta-text
+download: *$ftd.empty
 link: $scroll-card.cta-link
 width: wide
 
 -- ds.primary-button: $scroll-card.cta-text-2
 if: { scroll-card.cta-text-2 != NULL }
 link: $scroll-card.cta-link-2
+download: *$ftd.empty
 width: wide
 
 -- ds.primary-button: $scroll-card.cta-text-3

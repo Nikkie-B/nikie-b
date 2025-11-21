@@ -8,7 +8,7 @@ Nikie is an artist based out of Mumbai, available to work worldwide
 -- lib.scroll-card: Actor. Dancer. Dreamer.
 id: home
 cta-text: Resume
-cta-link: /
+cta-link: $assets.files.assets.resume.pdf
 cta-text-2: Headshots
 cta-link-2: /
 cta-text-3: Introduction Video
