@@ -12,7 +12,7 @@ width: fill-container
 spacing.fixed.px: 24
 padding.px: 32
 align-content: center
-background.solid: $ds.colors.background.step-1
+background.solid: $inherited.colors.background.step-1
 
 -- ftd.image:
 src: $footer.site-logo
@@ -58,3 +58,4 @@ color: $inherited.colors.text
 -- end: ftd.column
 
 -- end: footer
+
