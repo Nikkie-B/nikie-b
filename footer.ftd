@@ -1,0 +1,60 @@
+-- component footer:
+ftd.image-src site-logo:
+optional string instagram:
+optional string linkedin:
+optional string facebook:
+optional string imdb:
+optional string copyright:
+
+-- ftd.column:
+id: contact
+width: fill-container
+spacing.fixed.px: 24
+padding.px: 32
+align-content: center
+background.solid: $ds.colors.background.step-1
+
+-- ftd.image:
+src: $footer.site-logo
+width.fixed.px: 140
+width.fixed.px if { ftd.device == "mobile" }: 260
+height.fixed.px: 74
+
+-- ftd.row:
+align-content: center
+width: fill-container
+spacing.fixed.px: 24
+
+-- ftd.image:
+src: $assets.files.assets.instagram.svg
+width.fixed.px: 28
+link: $footer.instagram
+
+-- ftd.image:
+src: $assets.files.assets.linkedin.svg
+width.fixed.px: 28
+link: $footer.linkedin
+
+-- ftd.image:
+src: $assets.files.assets.imdb.svg
+width.fixed.px: 38
+link: $footer.imdb
+
+-- ftd.image:
+src: $assets.files.assets.facebook.svg
+width.fixed.px: 28
+link: $footer.facebook
+
+-- ftd.image:
+src: $assets.files.assets.email.svg
+width.fixed.px: 38
+link:mailto: Nikiebareja@gmail.com
+
+-- end: ftd.row
+
+-- ds.copy-small: $footer.copyright
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+-- end: footer

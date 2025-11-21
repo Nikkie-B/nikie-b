@@ -1,0 +1,23 @@
+-- import: fastn
+
+-- fastn.package: nikie-b.fifthtry.site
+
+-- fastn.dependency: design-system.fifthtry.site
+provided-via: nikie-b.fifthtry.site/ds
+
+-- fastn.dependency: card.fifthtry.site
+-- fastn.dependency: contact-form.fifthtry.site
+-- fastn.dependency: hero.fifthtry.site
+
+-- fastn.auto-import: design-system.fifthtry.site as ds
+-- fastn.auto-import: card.fifthtry.site as card
+-- fastn.auto-import: contact-form.fifthtry.site as contact
+-- fastn.auto-import: nikie-b.fifthtry.site/assets
+-- fastn.auto-import: hero.fifthtry.site as hero
+
+-- fastn.sitemap:
+
+# Home: /#home
+# Work: /#work
+# Showcase: /#commercials
+# Contact: /#contact

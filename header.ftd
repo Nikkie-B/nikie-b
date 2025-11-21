@@ -1,0 +1,123 @@
+-- import: fastn/processors as pr
+
+
+-- pr.sitemap-data sitemap:
+$processor$: pr.sitemap
+
+-- component header:
+optional caption title:
+ftd.image-src site-logo:
+string site-url:
+pr.toc-item list sections: 
+boolean $open: false
+
+-- ftd.row:
+width: fill-container
+padding-horizontal.px: 32
+padding-vertical.px: 20
+spacing: space-between
+background.solid: $inherited.colors.background.step-1
+border-radius.px: 18
+align-content: center
+
+-- ftd.image:
+src: $header.site-logo
+width.fixed.px: 140
+width.fixed.px if { ftd.device == "mobile" }: 110
+link: $header.site-url
+
+-- ftd.row:
+if: { ftd.device != "mobile" }
+spacing.fixed.px: 12
+
+-- header-item: $obj.title
+$loop$: $header.sections as $obj
+link: $obj.url
+is-active: $obj.is-active
+
+-- end: ftd.row
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+width: fill-container
+align-content: right
+
+-- ftd.image:
+src: $assets.files.assets.menu.svg
+src if { header.open }: $assets.files.assets.cross.svg
+width.fixed.px: 24
+$on-click$: $ftd.toggle($a = $header.open)
+
+-- ftd.column:
+if: { header.open }
+spacing.fixed.px: 12
+border-radius.px: 20
+anchor: window
+top.px: 90
+bottom.px: 0
+left.px: 24
+right.px: 0
+z-index: 1
+width.fixed.percent: 86
+height.fixed.percent: 60
+align-content: center
+background.solid: $inherited.colors.background.step-2
+padding.px: 24
+$on-click$: $ftd.toggle($a = $header.open)
+
+-- header-item: $obj.title
+$loop$: $header.sections as $obj
+link: $obj.url
+is-active: $obj.is-active
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: header
+
+
+
+-- component header-item:
+caption title:
+optional string link:
+boolean is-active: 
+boolean $open: false
+boolean $mouse-in: false
+
+-- ftd.row: 
+align-content: center
+$on-click$: $ftd.toggle($a = $header-item.open)
+$on-click-outside$: $ftd.set-bool($a = $header-item.open, v = false)
+border-width.px: 1
+border-color: $inherited.colors.border
+border-radius.px: 10
+padding.px: 10
+width.fixed.px: 162
+background.solid if { header-item.is-active }: $inherited.colors.background.base
+background.solid if { header-item.mouse-in }: $inherited.colors.background.base
+$on-mouse-leave$: $ftd.set-bool($a = $header-item.mouse-in, v = false)
+$on-mouse-enter$: $ftd.set-bool($a = $header-item.mouse-in, v = true)
+link: $header-item.link
+
+-- ftd.text: $header-item.title
+if: { $header-item.title != NULL }
+role: $inherited.types.copy-small
+white-space: nowrap
+color: $inherited.colors.text
+color if { header-item.mouse-in }: $inherited.colors.text-strong
+color if { header-item.is-active }: $inherited.colors.text-strong
+style if { header-item.is-active }: bold
+
+-- ftd.text: $header-item.title
+if: { header-item.link == NULL }
+role: $inherited.types.copy-small
+white-space: nowrap
+color: $inherited.colors.text-strong
+color if { header-item.is-active }: $inherited.colors.cta-primary.base
+
+-- end: ftd.row
+
+-- end: header-item

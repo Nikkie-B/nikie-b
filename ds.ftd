@@ -1,0 +1,41 @@
+-- import: design-system.fifthtry.site
+export: *
+
+-- import: nikie-b.fifthtry.site/header
+-- import: nikie-b.fifthtry.site/footer
+-- import: nikie-b.fifthtry.site/cs
+
+-- ftd.image-src site-logo: $assets.files.assets.logo.svg
+-- string site-url: /
+-- string copyright: Copyright 2025 - Nikie.B
+-- ftd.color-scheme colors: $cs.main
+
+
+-- ds.page-widths widths:
+regular.px: 1540
+narrow.px: 1260
+wide.px: 1800
+
+
+-- component site-header:
+
+-- header.header:
+sections: $header.sitemap.sections
+site-logo: $site-logo
+site-url: $site-url
+
+-- end: site-header
+
+
+
+-- component site-footer:
+
+-- footer.footer:
+site-logo: $site-logo
+instagram: https://www.instagram.com/nikiebeee/
+facebook: https://www.facebook.com/nikie.bareja
+linkedin: https://www.linkedin.com/in/nikie-bareja/
+imdb: https://www.imdb.com/name/nm13430358/
+copyright: $copyright
+
+-- end: site-footer
