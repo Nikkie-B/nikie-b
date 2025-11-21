@@ -1,0 +1,35 @@
+.slider-container {
+      width: 90%;
+      max-width: 1000px;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .slider {
+      display: flex;
+      width: fit-content;
+      animation: slide 20s linear infinite;
+    }
+
+    .slider-container:hover .slider {
+      animation-play-state: paused;
+    }
+
+    .image-card {
+      min-width: 300px;
+      margin: 0 10px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .image-card .images {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }

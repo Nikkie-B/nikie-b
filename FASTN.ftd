@@ -13,6 +13,7 @@ provided-via: nikie-b.fifthtry.site/ds
 -- fastn.auto-import: card.fifthtry.site as card
 -- fastn.auto-import: contact-form.fifthtry.site as contact
 -- fastn.auto-import: nikie-b.fifthtry.site/assets
+-- fastn.auto-import: nikie-b.fifthtry.site/components as lib
 -- fastn.auto-import: hero.fifthtry.site as hero
 
 -- fastn.sitemap:

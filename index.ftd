@@ -5,7 +5,7 @@ document-image: https://nikie-b.fifthtry.site/-/nikie-b.fifthtry.site/assets/6-d
 
 Nikie is an artist based out of Mumbai, available to work worldwide
 
--- card.scroll-card: Actor. Dancer. Dreamer.
+-- lib.scroll-card: Actor. Dancer. Dreamer.
 id: home
 cta-text: Resume
 cta-link: /
@@ -28,12 +28,12 @@ As a person, I’m curious, a little restless, and drawn to stories that cross
 borders. My hope is simple: to be part of work that feels alive, honest, and
 unforgettable — whether it’s in India or anywhere in the world.
 
--- card.slider-card:
+-- lib.slider-card:
 card-list: $card-data
 
--- end: card.scroll-card
+-- end: lib.scroll-card
 
--- card.title-card: My Work
+-- lib.title-card: My Work
 sub-title: Portfolio 
 id: work
 
@@ -41,33 +41,33 @@ id: work
 wrap: true
 align-content: left
 
--- card.layer-card: Silent Short Film directed by Santosh Sivan
+-- lib.layer-card: Silent Short Film directed by Santosh Sivan
 card-image: $assets.files.assets.card-1.png
 cta-link: https://youtu.be/KNAgrQtRzsw
 
--- card.layer-card: FTII Diploma film
+-- lib.layer-card: FTII Diploma film
 card-image: $assets.files.assets.kalma.jpeg
 cta-link: https://www.youtube.com/watch?v=TjozPbGyq8E
 
--- card.layer-card: Deep Jale (Kathak music Video)
+-- lib.layer-card: Deep Jale (Kathak music Video)
 card-image: $assets.files.assets.card-5.png
 cta-link: https://www.youtube.com/watch?v=qhgVQxYxZVE&list=RDqhgVQxYxZVE&start_radio=1
 
--- card.layer-card: A Musing on Love (Monologue)
+-- lib.layer-card: A Musing on Love (Monologue)
 card-image: $assets.files.assets.card-6.png
 cta-link: https://youtu.be/t1C-nyK2ULA
 
--- card.layer-card: Showreel
+-- lib.layer-card: Showreel
 card-image: $assets.files.assets.card-4.png
 cta-link: https://www.youtube.com/watch?si=zvPMI6aIz4Md6xM_&v=7pelR33j5KY&feature=youtu.be
 
--- card.layer-card: Streetcar Named Desire (Scene Work)
+-- lib.layer-card: Streetcar Named Desire (Scene Work)
 card-image: $assets.files.assets.card-2.png
 cta-link: /
 
 -- end: ds.row
 
--- card.title-card: Showcase
+-- lib.title-card: Showcase
 sub-title: Commercials
 id: commercials
 
@@ -76,7 +76,7 @@ wrap: true
 spacing: $ds.spaces.horizontal-gap.large
 inset if { ftd.device != "mobile" }: $ds.spaces.inset-wide.large-zero
 
--- card.reversed-card: Coca - Cola
+-- lib.reversed-card: Coca - Cola
 image: $assets.files.assets.portfolio-2.png
 link: https://www.youtube.com/watch?v=fyqAV-H8k4U
 
@@ -86,7 +86,7 @@ Director: Ryan Mendonca
 
 Production House: Bang Bang
 
--- card.reversed-card: Flipkart
+-- lib.reversed-card: Flipkart
 image: $assets.files.assets.flipkart.png
 link: https://www.youtube.com/watch?v=Obh1ClmJXWY
 
@@ -96,7 +96,7 @@ Director: Manika Shah
 
 Production House: Bang Bang
 
--- card.reversed-card: Abu Dhabi DCT
+-- lib.reversed-card: Abu Dhabi DCT
 image: $assets.files.assets.portfolio-4.png
 link: https://www.youtube.com/watch?v=RPvTJcMfjKQ
 
@@ -104,7 +104,7 @@ Director: Ryan Mendonca
 
 Production House: Dejavu Social
 
--- card.reversed-card: Maruti Suzuki
+-- lib.reversed-card: Maruti Suzuki
 image: $assets.files.assets.portfolio-8.png
 link: https://www.youtube.com/watch?v=k6YPi1j1Jsc
 
@@ -112,7 +112,7 @@ Director: Jerin V
 
 Production House: Zoom Studios
 
--- card.reversed-card: Flipkart
+-- lib.reversed-card: Flipkart
 image: $assets.files.assets.portfolio-1.png
 link: https://www.instagram.com/reel/C_uNDvkvpPp/?utm_source=ig_web_copy_link
 
@@ -122,7 +122,7 @@ Director: Ryan Mendonca
 
 Production House: Bang Bang
 
--- card.reversed-card: Rajdhani Besan
+-- lib.reversed-card: Rajdhani Besan
 image: $assets.files.assets.portfolio-5.png
 link: https://www.instagram.com/reel/DMAKsBcokYR/?utm_source=ig_web_copy_link&igsh=ZzJvZ3liN25mNmg%3D
 
@@ -138,417 +138,89 @@ Production House: Retro Films
 
 
 
--- hero.carousel list carousel-list:
 
--- hero.carousel:
-line-1: Actor. Dancer. Dreamer.
-image: $assets.files.assets.self-1.jpeg
 
-I’m Nikie, an actor trained at FTII. I’ve done theatre with the National
-School of Drama and the Sri Ram Centre, played leads in indie films, and
-worked on projects for Netflix and Prime Video with directors like Hansal
-Mehta, Ashwiny Iyer Tiwari, and Sudhir Mishra.
 
-Dance and movement are a big part of me — I’ve trained in Kathak, Odissi,
-Bachata, Kizomba, and Indian martial arts. They’ve taught me rhythm,
-discipline, and how to listen with my whole body.
 
-As a person, I’m curious, a little restless, and drawn to stories that cross
-borders. My hope is simple: to be part of work that feels alive, honest, and
-unforgettable — whether it’s in India or anywhere in the world.
 
--- hero.carousel:
-line-1:  Actor. Dancer. Dreamer.
-image: $assets.files.assets.self-2.jpeg
+-- lib.cards list card-data:
 
-I’m Nikie, an actor trained at FTII. I’ve done theatre with the National
-School of Drama and the Sri Ram Centre, played leads in indie films, and
-worked on projects for Netflix and Prime Video with directors like Hansal
-Mehta, Ashwiny Iyer Tiwari, and Sudhir Mishra.
-
-Dance and movement are a big part of me — I’ve trained in Kathak, Odissi,
-Bachata, Kizomba, and Indian martial arts. They’ve taught me rhythm,
-discipline, and how to listen with my whole body.
-
-As a person, I’m curious, a little restless, and drawn to stories that cross
-borders. My hope is simple: to be part of work that feels alive, honest, and
-unforgettable — whether it’s in India or anywhere in the world.
-
--- hero.carousel:
-line-1:  Actor. Dancer. Dreamer.
-image: $assets.files.assets.self-3.jpeg
-
-I’m Nikie, an actor trained at FTII. I’ve done theatre with the National
-School of Drama and the Sri Ram Centre, played leads in indie films, and
-worked on projects for Netflix and Prime Video with directors like Hansal
-Mehta, Ashwiny Iyer Tiwari, and Sudhir Mishra.
-
-Dance and movement are a big part of me — I’ve trained in Kathak, Odissi,
-Bachata, Kizomba, and Indian martial arts. They’ve taught me rhythm,
-discipline, and how to listen with my whole body.
-
-As a person, I’m curious, a little restless, and drawn to stories that cross
-borders. My hope is simple: to be part of work that feels alive, honest, and
-unforgettable — whether it’s in India or anywhere in the world.
-
--- hero.carousel:
-line-1:  Actor. Dancer. Dreamer.
-image: $assets.files.assets.self-4.jpeg
-
-I’m Nikie, an actor trained at FTII. I’ve done theatre with the National
-School of Drama and the Sri Ram Centre, played leads in indie films, and
-worked on projects for Netflix and Prime Video with directors like Hansal
-Mehta, Ashwiny Iyer Tiwari, and Sudhir Mishra.
-
-Dance and movement are a big part of me — I’ve trained in Kathak, Odissi,
-Bachata, Kizomba, and Indian martial arts. They’ve taught me rhythm,
-discipline, and how to listen with my whole body.
-
-As a person, I’m curious, a little restless, and drawn to stories that cross
-borders. My hope is simple: to be part of work that feels alive, honest, and
-unforgettable — whether it’s in India or anywhere in the world.
-
--- hero.carousel:
-line-1:  Actor. Dancer. Dreamer.
-image: $assets.files.assets.self-5.jpeg
-
-I’m Nikie, an actor trained at FTII. I’ve done theatre with the National
-School of Drama and the Sri Ram Centre, played leads in indie films, and
-worked on projects for Netflix and Prime Video with directors like Hansal
-Mehta, Ashwiny Iyer Tiwari, and Sudhir Mishra.
-
-Dance and movement are a big part of me — I’ve trained in Kathak, Odissi,
-Bachata, Kizomba, and Indian martial arts. They’ve taught me rhythm,
-discipline, and how to listen with my whole body.
-
-As a person, I’m curious, a little restless, and drawn to stories that cross
-borders. My hope is simple: to be part of work that feels alive, honest, and
-unforgettable — whether it’s in India or anywhere in the world.
-
--- hero.carousel:
-line-1:  Actor. Dancer. Dreamer.
-image: $assets.files.assets.self-6.jpeg
-
-I’m Nikie, an actor trained at FTII. I’ve done theatre with the National
-School of Drama and the Sri Ram Centre, played leads in indie films, and
-worked on projects for Netflix and Prime Video with directors like Hansal
-Mehta, Ashwiny Iyer Tiwari, and Sudhir Mishra.
-
-Dance and movement are a big part of me — I’ve trained in Kathak, Odissi,
-Bachata, Kizomba, and Indian martial arts. They’ve taught me rhythm,
-discipline, and how to listen with my whole body.
-
-As a person, I’m curious, a little restless, and drawn to stories that cross
-borders. My hope is simple: to be part of work that feels alive, honest, and
-unforgettable — whether it’s in India or anywhere in the world.
-
--- hero.carousel:
-line-1:  Actor. Dancer. Dreamer.
-image: $assets.files.assets.self-7.jpeg
-
-I’m Nikie, an actor trained at FTII. I’ve done theatre with the National
-School of Drama and the Sri Ram Centre, played leads in indie films, and
-worked on projects for Netflix and Prime Video with directors like Hansal
-Mehta, Ashwiny Iyer Tiwari, and Sudhir Mishra.
-
-Dance and movement are a big part of me — I’ve trained in Kathak, Odissi,
-Bachata, Kizomba, and Indian martial arts. They’ve taught me rhythm,
-discipline, and how to listen with my whole body.
-
-As a person, I’m curious, a little restless, and drawn to stories that cross
-borders. My hope is simple: to be part of work that feels alive, honest, and
-unforgettable — whether it’s in India or anywhere in the world.
-
--- hero.carousel:
-line-1:  Actor. Dancer. Dreamer.
-image: $assets.files.assets.self-8.jpeg
-
-I’m Nikie, an actor trained at FTII. I’ve done theatre with the National
-School of Drama and the Sri Ram Centre, played leads in indie films, and
-worked on projects for Netflix and Prime Video with directors like Hansal
-Mehta, Ashwiny Iyer Tiwari, and Sudhir Mishra.
-
-Dance and movement are a big part of me — I’ve trained in Kathak, Odissi,
-Bachata, Kizomba, and Indian martial arts. They’ve taught me rhythm,
-discipline, and how to listen with my whole body.
-
-As a person, I’m curious, a little restless, and drawn to stories that cross
-borders. My hope is simple: to be part of work that feels alive, honest, and
-unforgettable — whether it’s in India or anywhere in the world.
-
--- hero.carousel:
-line-1:  Actor. Dancer. Dreamer.
-image: $assets.files.assets.self-9.jpeg
-
-I’m Nikie, an actor trained at FTII. I’ve done theatre with the National
-School of Drama and the Sri Ram Centre, played leads in indie films, and
-worked on projects for Netflix and Prime Video with directors like Hansal
-Mehta, Ashwiny Iyer Tiwari, and Sudhir Mishra.
-
-Dance and movement are a big part of me — I’ve trained in Kathak, Odissi,
-Bachata, Kizomba, and Indian martial arts. They’ve taught me rhythm,
-discipline, and how to listen with my whole body.
-
-As a person, I’m curious, a little restless, and drawn to stories that cross
-borders. My hope is simple: to be part of work that feels alive, honest, and
-unforgettable — whether it’s in India or anywhere in the world.
-
--- hero.carousel:
-line-1:  Actor. Dancer. Dreamer.
-image: $assets.files.assets.self-10.jpeg
-
-I’m Nikie, an actor trained at FTII. I’ve done theatre with the National
-School of Drama and the Sri Ram Centre, played leads in indie films, and
-worked on projects for Netflix and Prime Video with directors like Hansal
-Mehta, Ashwiny Iyer Tiwari, and Sudhir Mishra.
-
-Dance and movement are a big part of me — I’ve trained in Kathak, Odissi,
-Bachata, Kizomba, and Indian martial arts. They’ve taught me rhythm,
-discipline, and how to listen with my whole body.
-
-As a person, I’m curious, a little restless, and drawn to stories that cross
-borders. My hope is simple: to be part of work that feels alive, honest, and
-unforgettable — whether it’s in India or anywhere in the world.
-
--- hero.carousel:
-line-1:  Actor. Dancer. Dreamer.
-image: $assets.files.assets.self-11.jpeg
-
-I’m Nikie, an actor trained at FTII. I’ve done theatre with the National
-School of Drama and the Sri Ram Centre, played leads in indie films, and
-worked on projects for Netflix and Prime Video with directors like Hansal
-Mehta, Ashwiny Iyer Tiwari, and Sudhir Mishra.
-
-Dance and movement are a big part of me — I’ve trained in Kathak, Odissi,
-Bachata, Kizomba, and Indian martial arts. They’ve taught me rhythm,
-discipline, and how to listen with my whole body.
-
-As a person, I’m curious, a little restless, and drawn to stories that cross
-borders. My hope is simple: to be part of work that feels alive, honest, and
-unforgettable — whether it’s in India or anywhere in the world.
-
--- hero.carousel:
-line-1:  Actor. Dancer. Dreamer.
-image: $assets.files.assets.self-12.jpeg
-
-I’m Nikie, an actor trained at FTII. I’ve done theatre with the National
-School of Drama and the Sri Ram Centre, played leads in indie films, and
-worked on projects for Netflix and Prime Video with directors like Hansal
-Mehta, Ashwiny Iyer Tiwari, and Sudhir Mishra.
-
-Dance and movement are a big part of me — I’ve trained in Kathak, Odissi,
-Bachata, Kizomba, and Indian martial arts. They’ve taught me rhythm,
-discipline, and how to listen with my whole body.
-
-As a person, I’m curious, a little restless, and drawn to stories that cross
-borders. My hope is simple: to be part of work that feels alive, honest, and
-unforgettable — whether it’s in India or anywhere in the world.
-
--- hero.carousel:
-line-1:  Actor. Dancer. Dreamer.
-image: $assets.files.assets.self-13.jpeg
-
-I’m Nikie, an actor trained at FTII. I’ve done theatre with the National
-School of Drama and the Sri Ram Centre, played leads in indie films, and
-worked on projects for Netflix and Prime Video with directors like Hansal
-Mehta, Ashwiny Iyer Tiwari, and Sudhir Mishra.
-
-Dance and movement are a big part of me — I’ve trained in Kathak, Odissi,
-Bachata, Kizomba, and Indian martial arts. They’ve taught me rhythm,
-discipline, and how to listen with my whole body.
-
-As a person, I’m curious, a little restless, and drawn to stories that cross
-borders. My hope is simple: to be part of work that feels alive, honest, and
-unforgettable — whether it’s in India or anywhere in the world.
-
--- hero.carousel:
-line-1:  Actor. Dancer. Dreamer.
-image: $assets.files.assets.self-14.jpeg
-
-I’m Nikie, an actor trained at FTII. I’ve done theatre with the National
-School of Drama and the Sri Ram Centre, played leads in indie films, and
-worked on projects for Netflix and Prime Video with directors like Hansal
-Mehta, Ashwiny Iyer Tiwari, and Sudhir Mishra.
-
-Dance and movement are a big part of me — I’ve trained in Kathak, Odissi,
-Bachata, Kizomba, and Indian martial arts. They’ve taught me rhythm,
-discipline, and how to listen with my whole body.
-
-As a person, I’m curious, a little restless, and drawn to stories that cross
-borders. My hope is simple: to be part of work that feels alive, honest, and
-unforgettable — whether it’s in India or anywhere in the world.
-
--- hero.carousel:
-line-1:  Actor. Dancer. Dreamer.
-image: $assets.files.assets.self-15.jpeg
-
-I’m Nikie, an actor trained at FTII. I’ve done theatre with the National
-School of Drama and the Sri Ram Centre, played leads in indie films, and
-worked on projects for Netflix and Prime Video with directors like Hansal
-Mehta, Ashwiny Iyer Tiwari, and Sudhir Mishra.
-
-Dance and movement are a big part of me — I’ve trained in Kathak, Odissi,
-Bachata, Kizomba, and Indian martial arts. They’ve taught me rhythm,
-discipline, and how to listen with my whole body.
-
-As a person, I’m curious, a little restless, and drawn to stories that cross
-borders. My hope is simple: to be part of work that feels alive, honest, and
-unforgettable — whether it’s in India or anywhere in the world.
-
--- hero.carousel:
-line-1:  Actor. Dancer. Dreamer.
-image: $assets.files.assets.self-16.jpeg
-
-I’m Nikie, an actor trained at FTII. I’ve done theatre with the National
-School of Drama and the Sri Ram Centre, played leads in indie films, and
-worked on projects for Netflix and Prime Video with directors like Hansal
-Mehta, Ashwiny Iyer Tiwari, and Sudhir Mishra.
-
-Dance and movement are a big part of me — I’ve trained in Kathak, Odissi,
-Bachata, Kizomba, and Indian martial arts. They’ve taught me rhythm,
-discipline, and how to listen with my whole body.
-
-As a person, I’m curious, a little restless, and drawn to stories that cross
-borders. My hope is simple: to be part of work that feels alive, honest, and
-unforgettable — whether it’s in India or anywhere in the world.
-
--- hero.carousel:
-line-1:  Actor. Dancer. Dreamer.
-image: $assets.files.assets.self-17.jpeg
-
-I’m Nikie, an actor trained at FTII. I’ve done theatre with the National
-School of Drama and the Sri Ram Centre, played leads in indie films, and
-worked on projects for Netflix and Prime Video with directors like Hansal
-Mehta, Ashwiny Iyer Tiwari, and Sudhir Mishra.
-
-Dance and movement are a big part of me — I’ve trained in Kathak, Odissi,
-Bachata, Kizomba, and Indian martial arts. They’ve taught me rhythm,
-discipline, and how to listen with my whole body.
-
-As a person, I’m curious, a little restless, and drawn to stories that cross
-borders. My hope is simple: to be part of work that feels alive, honest, and
-unforgettable — whether it’s in India or anywhere in the world.
-
--- hero.carousel:
-line-1:  Actor. Dancer. Dreamer.
-image: $assets.files.assets.self-18.jpeg
-
-I’m Nikie, an actor trained at FTII. I’ve done theatre with the National
-School of Drama and the Sri Ram Centre, played leads in indie films, and
-worked on projects for Netflix and Prime Video with directors like Hansal
-Mehta, Ashwiny Iyer Tiwari, and Sudhir Mishra.
-
-Dance and movement are a big part of me — I’ve trained in Kathak, Odissi,
-Bachata, Kizomba, and Indian martial arts. They’ve taught me rhythm,
-discipline, and how to listen with my whole body.
-
-As a person, I’m curious, a little restless, and drawn to stories that cross
-borders. My hope is simple: to be part of work that feels alive, honest, and
-unforgettable — whether it’s in India or anywhere in the world.
-
--- hero.carousel:
-line-1:  Actor. Dancer. Dreamer.
-image: $assets.files.assets.self-19.jpeg
-
-I’m Nikie, an actor trained at FTII. I’ve done theatre with the National
-School of Drama and the Sri Ram Centre, played leads in indie films, and
-worked on projects for Netflix and Prime Video with directors like Hansal
-Mehta, Ashwiny Iyer Tiwari, and Sudhir Mishra.
-
-Dance and movement are a big part of me — I’ve trained in Kathak, Odissi,
-Bachata, Kizomba, and Indian martial arts. They’ve taught me rhythm,
-discipline, and how to listen with my whole body.
-
-As a person, I’m curious, a little restless, and drawn to stories that cross
-borders. My hope is simple: to be part of work that feels alive, honest, and
-unforgettable — whether it’s in India or anywhere in the world.
-
--- end: carousel-list
-
-
-
-
-
-
-
--- card.cards list card-data:
-
--- card.cards:
+-- lib.cards:
 image: $assets.files.assets.1.jpeg
 height.fixed.px: 859
 width.fixed.px: 650
 
--- card.cards:
+-- lib.cards:
 image: $assets.files.assets.2.jpeg
 height.fixed.px: 859
 width.fixed.px: 650
 
--- card.cards:
+-- lib.cards:
 image: $assets.files.assets.3.jpeg
 height.fixed.px: 859
 width.fixed.px: 650
 
--- card.cards:
+-- lib.cards:
 image: $assets.files.assets.4.jpeg
 height.fixed.px: 859
 width.fixed.px: 650
 
--- card.cards:
+-- lib.cards:
 image: $assets.files.assets.5-5.jpeg
 height.fixed.px: 859
 width.fixed.px: 650
 
--- card.cards:
+-- lib.cards:
 image: $assets.files.assets.6.jpeg
 height.fixed.px: 859
 width.fixed.px: 650
 
--- card.cards:
+-- lib.cards:
 image: $assets.files.assets.7.jpeg
 height.fixed.px: 859
 width.fixed.px: 650
 
--- card.cards:
+-- lib.cards:
 image: $assets.files.assets.8.jpeg
 height.fixed.px: 859
 width.fixed.px: 650
 
--- card.cards:
+-- lib.cards:
 image: $assets.files.assets.9.jpeg
 height.fixed.px: 859
 width.fixed.px: 650
 
--- card.cards:
+-- lib.cards:
 image: $assets.files.assets.10.jpeg
 height.fixed.px: 859
 width.fixed.px: 650
 
--- card.cards:
+-- lib.cards:
 image: $assets.files.assets.11.jpeg
 height.fixed.px: 859
 width.fixed.px: 650
 
--- card.cards:
+-- lib.cards:
 image: $assets.files.assets.12.jpeg
 height.fixed.px: 859
 width.fixed.px: 650
 
--- card.cards:
+-- lib.cards:
 image: $assets.files.assets.13.jpeg
 height.fixed.px: 859
 width.fixed.px: 650
 
--- card.cards:
+-- lib.cards:
 image: $assets.files.assets.14.jpeg
 height.fixed.px: 859
 width.fixed.px: 650
 
--- card.cards:
+-- lib.cards:
 image: $assets.files.assets.15.jpeg
 height.fixed.px: 859
 width.fixed.px: 650
 
--- card.cards:
+-- lib.cards:
 image: $assets.files.assets.16.jpeg
 height.fixed.px: 859
 width.fixed.px: 650

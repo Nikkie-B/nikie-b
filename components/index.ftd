@@ -1,0 +1,374 @@
+-- component scroll-card:
+caption title:
+optional ftd.image-src back-image:
+body body:
+string cta-text:
+string cta-link:
+optional string cta-text-2:
+optional string cta-link-2:
+optional string cta-text-3:
+optional string cta-link-3:
+string id:
+boolean small: false
+children children:
+
+-- ftd.column:
+width: fill-container
+spacing.fixed.px: 48
+id: $scroll-card.id
+
+-- ftd.row: 
+if: { ftd.device != "mobile" }
+width: fill-container
+spacing.fixed.px: 24
+
+-- ftd.column:
+background.solid: $ds.colors.background.step-1
+padding-vertical.px if { scroll-card.small }: 40
+padding-right.px if { scroll-card.small }: 20
+padding-left.px if { scroll-card.small }: 40
+padding.px: 40
+border-radius.px: 20
+spacing.fixed.px: 32
+height.fixed.px: 859
+width.fixed.px: 730
+
+-- ds.heading-hero: $scroll-card.title
+if: { !scroll-card.small }
+color: $ds.colors.text
+style: semi-bold
+
+-- ds.heading-large: $scroll-card.title
+if: { scroll-card.small }
+color: $ds.colors.text
+style: semi-bold
+
+-- ds.copy-regular: $scroll-card.body
+width.fixed.px: 400
+
+-- ftd.row:
+width: fill-container
+spacing.fixed.px: 32
+wrap: true
+
+-- ds.primary-button: $scroll-card.cta-text
+link: $scroll-card.cta-link
+width: wide
+
+-- ds.primary-button: $scroll-card.cta-text-2
+if: { scroll-card.cta-text-2 != NULL }
+link: $scroll-card.cta-link-2
+width: wide
+
+-- ds.primary-button: $scroll-card.cta-text-3
+if: { scroll-card.cta-text-3 != NULL }
+link: $scroll-card.cta-link-3
+width: wide
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.row:
+width.fixed.px: 730
+border-radius.px: 20
+height.fixed.px: 859
+children: $scroll-card.children
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- ftd.column: 
+if: { ftd.device == "mobile" }
+width: fill-container
+spacing.fixed.px: 24
+  
+-- ftd.column:
+background.solid: $ds.colors.background.step-1
+padding.px: 40
+border-radius.px: 20
+spacing.fixed.px: 32
+width: fill-container
+border-radius.px: 16
+  
+-- ds.heading-hero: $scroll-card.title
+color: $ds.colors.text
+style: semi-bold
+
+-- ds.copy-regular: $scroll-card.body
+
+-- ds.primary-button: $scroll-card.cta-text
+link: $scroll-card.cta-link
+width: wide
+
+-- ds.primary-button: $scroll-card.cta-text-2
+if: { scroll-card.cta-text-2 != NULL }
+link: $scroll-card.cta-link-2
+width: wide
+
+-- ds.primary-button: $scroll-card.cta-text-3
+if: { scroll-card.cta-text-3 != NULL }
+link: $scroll-card.cta-link-3
+width: wide
+
+-- end: ftd.column
+
+-- ftd.row:
+children: $scroll-card.children
+width: fill-container
+border-radius.px: 16
+
+-- end: ftd.row
+  
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: scroll-card
+
+
+
+
+
+
+
+
+-- component slider-card:
+cards list card-list:
+
+-- ftd.row:
+classes: slider-container
+css: [$assets.files.assets.style.css]
+
+-- ftd.row:
+classes: slider
+css: [$assets.files.assets.style.css]
+
+-- image-slider-card: $obj.title
+for: $obj in $slider-card.card-list
+image: $obj.image
+body: $obj.body
+height: $obj.height
+width: $obj.width
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: slider-card
+
+
+
+
+
+
+
+
+
+
+
+-- component image-slider-card:
+optional caption title:
+optional body body:
+ftd.image-src image:
+optional ftd.resizing height:
+optional ftd.resizing width:
+
+-- ftd.column:
+classes: image-card
+css: [$assets.files.assets.style.css]
+
+-- ftd.image:
+src: $image-slider-card.image
+classes if { !image-slider-card.height }: images
+css: [$assets.files.assets.style.css]
+height.fixed.px if { image-slider-card.height }: $image-slider-card.height
+width.fixed.px if { image-slider-card.width }: $image-slider-card.width
+fit if { image-slider-card.height }: cover
+
+-- ds.column:
+if: { image-slider-card.title }
+background.solid: $ds.colors.background.step-1
+radius: $ds.radius.zero
+
+-- ds.heading-tiny: $image-slider-card.title
+if: { image-slider-card.title != NULL }
+style: bold
+
+-- ds.copy-regular:
+if: { image-slider-card.body != NULL }
+
+$image-slider-card.body
+
+-- end: ds.column
+
+-- end: ftd.column
+
+-- end: image-slider-card
+
+
+
+
+
+
+
+
+
+-- component title-card:
+caption title:
+string sub-title:
+string id: 
+
+-- ftd.column:
+id: $title-card.id
+  width: fill-container
+border-radius.px: 20
+padding.px: 40
+padding-bottom.px: 60
+background.solid: $ds.colors.background.step-1
+
+-- ds.heading-small: $title-card.sub-title
+color: $ds.colors.text
+style: regular
+
+-- ds.heading-hero: $title-card.title
+color: $ds.colors.text
+
+-- end: ftd.column
+
+-- end: title-card
+
+
+
+
+
+
+
+
+
+
+-- component layer-card:
+ftd.image-src card-image:
+caption title:
+optional body body:
+string cta-link:
+boolean $hover: false
+boolean $mouse-in: false
+
+-- ds.column:
+width.fixed.px: 440
+width if { ftd.device == "mobile" }: fill-container
+height.fixed.px: 440
+inset: $ds.spaces.inset-square.zero
+radius: $ds.radius.zero
+$on-mouse-enter$: $ftd.set-bool($a = $layer-card.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $layer-card.hover, v = false)
+
+-- ftd.image:
+src: $layer-card.card-image
+width.fixed.px: 440
+height.fixed.px: 440
+width if { ftd.device == "mobile" }: fill-container
+border-radius.px: 20
+fit: cover
+
+-- ftd.column:
+if: { layer-card.hover }
+background.solid: $ds.colors.background.overlay
+anchor: parent
+bottom.px: 0
+left.px: 0
+top.px: 0
+width: fill-container
+height: fill-container
+padding.px: 24
+align-content: center
+spacing.fixed.px: 120
+border-radius.px: 20
+link: $layer-card.cta-link
+ 
+-- ds.heading-medium: $layer-card.title
+align: center
+color: $ds.colors.cta-secondary.text
+
+-- ds.copy-regular: $layer-card.body
+if: { layer-card.body != NULL }
+  
+-- end: ftd.column
+  
+-- end: ds.column
+
+-- end: layer-card
+
+
+
+
+
+
+
+
+
+
+
+
+-- component reversed-card:
+caption title:
+body body:
+ftd.image-src image:
+string link:
+
+-- ftd.column:
+width.fixed.px: 450
+width if { ftd.device == "mobile" }: fill-container
+border-radius.px: 20
+background.solid: $ds.colors.background.step-1
+link: $reversed-card.link
+
+-- ftd.column:
+spacing.fixed.px: 28
+padding.px: 40
+padding-bottom.px: 60
+
+-- ds.heading-medium: $reversed-card.title
+style: semi-bold
+color: $ds.colors.text
+
+-- ds.copy-regular: $reversed-card.body
+
+-- end: ftd.column
+  
+-- ftd.row:
+
+-- ftd.image:
+src: $reversed-card.image
+width: fill-container
+border-bottom-left-radius.px: 20
+border-bottom-right-radius.px: 20
+height.fixed.px: 358
+fit: cover
+
+-- end: ftd.column
+
+-- end: reversed-card
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- record cards:
+optional caption title:
+optional body body:
+ftd.image-src image:
+optional ftd.resizing height:
+optional ftd.resizing width:
