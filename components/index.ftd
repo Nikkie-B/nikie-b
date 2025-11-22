@@ -1,3 +1,54 @@
+-- or-type button-kind:
+
+-- constant integer primary: 1
+-- constant integer secondary: 2
+-- constant integer tertiary: 3
+-- constant integer danger: 4
+-- constant integer link: 5
+
+-- end: button-kind
+
+These are variants
+
+-- or-type button-variant:
+
+-- constant integer solid: 0
+-- constant integer outline: 1
+-- constant integer disabled: 2
+-- constant integer link: 3
+
+-- end: button-variant
+
+
+-- or-type button-width:
+
+;; default padding: hug-content
+-- constant integer default: 0
+;; extra wide buttons
+-- constant integer wide: 1
+;; full width buttons
+-- constant integer full: 2
+
+-- end: button-width
+
+
+-- or-type button-size:
+
+-- constant integer extra-large: 0
+-- constant integer large: 1
+-- constant integer medium: 2
+-- constant integer small: 3
+
+-- end: button-size
+
+
+-- or-type button-radius:
+
+-- constant integer none: 0
+-- constant integer curved: 1
+
+-- end: button-radius
+
 -- component scroll-card:
 caption title:
 optional ftd.image-src back-image:
@@ -51,20 +102,20 @@ width: fill-container
 spacing.fixed.px: 32
 wrap: true
 
--- ds.primary-button: $scroll-card.cta-text
+-- primary-button: $scroll-card.cta-text
 download: *$ftd.empty
 link: $scroll-card.cta-link
 width: wide
 open-in-new-tab: true
 
--- ds.primary-button: $scroll-card.cta-text-2
+-- primary-button: $scroll-card.cta-text-2
 if: { scroll-card.cta-text-2 != NULL }
 link: $scroll-card.cta-link-2
 download: *$ftd.empty
 width: wide
 open-in-new-tab: true
 
--- ds.primary-button: $scroll-card.cta-text-3
+-- primary-button: $scroll-card.cta-text-3
 if: { scroll-card.cta-text-3 != NULL }
 link: $scroll-card.cta-link-3
 width: wide
@@ -103,18 +154,18 @@ style: semi-bold
 
 -- ds.copy-regular: $scroll-card.body
 
--- ds.primary-button: $scroll-card.cta-text
+-- primary-button: $scroll-card.cta-text
 link: $scroll-card.cta-link
 width: wide
 open-in-new-tab: true
 
--- ds.primary-button: $scroll-card.cta-text-2
+-- primary-button: $scroll-card.cta-text-2
 if: { scroll-card.cta-text-2 != NULL }
 link: $scroll-card.cta-link-2
 width: wide
 open-in-new-tab: true
 
--- ds.primary-button: $scroll-card.cta-text-3
+-- primary-button: $scroll-card.cta-text-3
 if: { scroll-card.cta-text-3 != NULL }
 link: $scroll-card.cta-link-3
 width: wide
@@ -134,6 +185,56 @@ border-radius.px: 16
 -- end: ftd.column
 
 -- end: scroll-card
+
+
+
+
+
+
+
+-- component primary-button:
+caption title:
+optional string link:
+boolean $hover: false
+button-width width: default
+boolean enabled: true
+button-size size: medium
+button-radius radius: curved
+button-variant variant: solid
+boolean rounded: false
+boolean open-in-new-tab: false
+optional string download:
+
+-- ds.row:
+background.solid if { primary-button.variant == solid }: $ds.colors.cta-primary.base
+background.solid if { primary-button.variant == disabled }: $ds.colors.cta-primary.disabled
+background.solid if { primary-button.hover }: $inherited.colors.cta-primary.hover
+radius if { primary-button.rounded }: $ds.radius.large
+radius if { primary-button.radius == none }: $ds.radius.zero
+radius if { primary-button.radius == curved }: $ds.radius.medium
+inset if { primary-button.size == small }: $ds.spaces.inset-wide.small
+inset if { primary-button.size == medium }: $ds.spaces.inset-wide.medium
+inset if { primary-button.size == large }: $ds.spaces.inset-wide.large
+align-content: center
+$on-mouse-enter$: $ftd.set-bool($a = $primary-button.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $primary-button.hover, v = false)
+spacing: $ds.spaces.horizontal-gap.small
+width if { primary-button.width == default }: hug-content
+width.fixed.px if { primary-button.width == wide }: 200
+width if { primary-button.width == full }: fill-container
+link: $primary-button.link
+open-in-new-tab: $primary-button.open-in-new-tab
+download: $primary-button.download
+border: $ds.borders.uniform.small
+border-color: $inherited.colors.cta-primary.border
+
+	-- ds.copy-small:
+	text: $primary-button.title
+	color: $ds.colors.cta-primary.text
+	
+-- end: ds.row
+
+-- end: primary-button
 
 
 
@@ -382,4 +483,5 @@ optional body body:
 ftd.image-src image:
 optional ftd.resizing height:
 optional ftd.resizing width:
+
 
