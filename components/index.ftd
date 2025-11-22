@@ -103,7 +103,6 @@ spacing.fixed.px: 32
 wrap: true
 
 -- primary-button: $scroll-card.cta-text
-download: *$ftd.empty
 link: $scroll-card.cta-link
 width: wide
 open-in-new-tab: true
@@ -111,7 +110,6 @@ open-in-new-tab: true
 -- primary-button: $scroll-card.cta-text-2
 if: { scroll-card.cta-text-2 != NULL }
 link: $scroll-card.cta-link-2
-download: *$ftd.empty
 width: wide
 open-in-new-tab: true
 
@@ -206,8 +204,8 @@ boolean open-in-new-tab: false
 optional string download:
 
 -- ds.row:
-background.solid if { primary-button.variant == solid }: $ds.colors.cta-primary.base
-background.solid if { primary-button.variant == disabled }: $ds.colors.cta-primary.disabled
+background.solid if { primary-button.variant == solid }: $inherited.colors.cta-primary.base
+background.solid if { primary-button.variant == disabled }: $inherited.colors.cta-primary.disabled
 background.solid if { primary-button.hover }: $inherited.colors.cta-primary.hover
 radius if { primary-button.rounded }: $ds.radius.large
 radius if { primary-button.radius == none }: $ds.radius.zero
@@ -483,5 +481,6 @@ optional body body:
 ftd.image-src image:
 optional ftd.resizing height:
 optional ftd.resizing width:
+
 
 
