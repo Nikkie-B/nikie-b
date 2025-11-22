@@ -78,6 +78,16 @@ wrap: true
 spacing: $ds.spaces.horizontal-gap.large
 inset if { ftd.device != "mobile" }: $ds.spaces.inset-wide.large-zero
 
+-- lib.reversed-card: Titan
+image: $assets.files.assets.titan.png
+link: https://www.youtube.com/watch?v=iEca2pgV_hU
+
+Agency: Ogilvy
+
+Director: Manish Sharma
+
+Production House: Roger That
+
 -- lib.reversed-card: Coca - Cola
 image: $assets.files.assets.portfolio-2.png
 link: https://www.youtube.com/watch?v=fyqAV-H8k4U
