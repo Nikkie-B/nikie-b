@@ -65,7 +65,7 @@ cta-link: https://www.youtube.com/watch?si=zvPMI6aIz4Md6xM_&v=7pelR33j5KY&featur
 
 -- lib.layer-card: Streetcar Named Desire (Scene Work)
 card-image: $assets.files.assets.card-2.png
-cta-link: /
+cta-link: https://www.youtube.com/watch?v=IKzIVmJkNjI
 
 -- end: ds.row
 
@@ -124,7 +124,7 @@ Director: Jerin V
 
 Production House: Zoom Studios
 
--- lib.reversed-card: Flipkart
+/-- lib.reversed-card: Flipkart
 image: $assets.files.assets.portfolio-1.png
 link: https://www.instagram.com/reel/C_uNDvkvpPp/?utm_source=ig_web_copy_link
 
