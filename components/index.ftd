@@ -55,17 +55,20 @@ wrap: true
 download: *$ftd.empty
 link: $scroll-card.cta-link
 width: wide
+open-in-new-tab: true
 
 -- ds.primary-button: $scroll-card.cta-text-2
 if: { scroll-card.cta-text-2 != NULL }
 link: $scroll-card.cta-link-2
 download: *$ftd.empty
 width: wide
+open-in-new-tab: true
 
 -- ds.primary-button: $scroll-card.cta-text-3
 if: { scroll-card.cta-text-3 != NULL }
 link: $scroll-card.cta-link-3
 width: wide
+open-in-new-tab: true
 
 -- end: ftd.row
 
@@ -103,16 +106,19 @@ style: semi-bold
 -- ds.primary-button: $scroll-card.cta-text
 link: $scroll-card.cta-link
 width: wide
+open-in-new-tab: true
 
 -- ds.primary-button: $scroll-card.cta-text-2
 if: { scroll-card.cta-text-2 != NULL }
 link: $scroll-card.cta-link-2
 width: wide
+open-in-new-tab: true
 
 -- ds.primary-button: $scroll-card.cta-text-3
 if: { scroll-card.cta-text-3 != NULL }
 link: $scroll-card.cta-link-3
 width: wide
+open-in-new-tab: true
 
 -- end: ftd.column
 
@@ -224,7 +230,7 @@ string id:
 
 -- ftd.column:
 id: $title-card.id
-  width: fill-container
+width: fill-container
 border-radius.px: 20
 padding.px: 40
 padding-bottom.px: 60
@@ -289,7 +295,8 @@ align-content: center
 spacing.fixed.px: 120
 border-radius.px: 20
 link: $layer-card.cta-link
- 
+open-in-new-tab: true
+
 -- ds.heading-medium: $layer-card.title
 align: center
 color: #000000
@@ -326,6 +333,7 @@ width if { ftd.device == "mobile" }: fill-container
 border-radius.px: 20
 background.solid: #F8F4ED
 link: $reversed-card.link
+open-in-new-tab: true
 
 -- ftd.column:
 spacing.fixed.px: 28
@@ -374,3 +382,4 @@ optional body body:
 ftd.image-src image:
 optional ftd.resizing height:
 optional ftd.resizing width:
+
