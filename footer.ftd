@@ -29,26 +29,31 @@ spacing.fixed.px: 24
 src: $assets.files.assets.instagram.svg
 width.fixed.px: 28
 link: $footer.instagram
+open-in-new-tab: true
 
 -- ftd.image:
 src: $assets.files.assets.linkedin.svg
 width.fixed.px: 28
 link: $footer.linkedin
+open-in-new-tab: true
 
 -- ftd.image:
 src: $assets.files.assets.imdb.svg
 width.fixed.px: 38
 link: $footer.imdb
+open-in-new-tab: true
 
 -- ftd.image:
 src: $assets.files.assets.facebook.svg
 width.fixed.px: 28
 link: $footer.facebook
+open-in-new-tab: true
 
 -- ftd.image:
 src: $assets.files.assets.email.svg
 width.fixed.px: 38
 link:mailto: Nikiebareja@gmail.com
+open-in-new-tab: true
 
 -- end: ftd.row
 
@@ -58,4 +63,5 @@ color: $inherited.colors.text
 -- end: ftd.column
 
 -- end: footer
+
 
