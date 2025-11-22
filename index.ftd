@@ -12,7 +12,7 @@ id: home
 cta-text: Resume
 cta-link: $assets.files.assets.resume.pdf
 cta-text-2: Headshots
-cta-link-2: /
+cta-link-2: $assets.files.assets.headshots.pdf
 cta-text-3: Introduction Video
 cta-link-3: https://youtu.be/ApiSGFC_gpM
 small: true
